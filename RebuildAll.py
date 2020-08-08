@@ -13,7 +13,7 @@ from anki.hooks import wrap
 from aqt import mw
 from aqt.deckbrowser import DeckBrowser
 from aqt.utils import tooltip
-
+from anki.lang import _
 
 def _updateFilteredDecks(actionFuncName):
     dynDeckIds = [ d["id"] for d in mw.col.decks.all() if d["dyn"] ]
